@@ -27,5 +27,20 @@ Doc2: If you're in the mood for Italian, Mario's on 5th Street is fantastic. The
 
 Doc1 matches the *semantics* of question with words like “Eat” and “Around here” being semantically similar to “this city”, but Doc2 is better because it matches the *intent* of the question.
 
- 
+## Azure OpenAI and Intent
+
+Let's now look at how we can potentially use Azure OpenAI to help with the intent matching. Using Azure AI Studio we can see in this image how a simple prompt can be used to not only find the likelihood (confidence) that the response matched the intent, but also generate a reason why.
+
+ ![image](https://github.com/liamca/superrag/assets/3432973/868ce37c-5f28-4c36-bf1c-efa1d816bb17)
+
+ Here is a good starting point for a prompt. You will likely need to adjust based on your own needs.
+
+```
+I am going to supply you with a set of potential answers and your goal is to determine which of them is best able to answer the question:
+""" +  question + """
+Please respond in JSON format with a "confidence" score for each example indicating your confidence the text answers the question as well as the "id" of the text.  
+Include a field called "relevent_text" which includes the text that is relevent to being able to answer the question.  
+Each example will include an answer id as well as the text for the potential answer, separated by a colon.  
+```
+
 
