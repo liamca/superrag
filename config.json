@@ -1,0 +1,10 @@
+{
+    "openai_embedding_api_base" : "https://YOUR_SERVICE.openai.azure.com/",
+    "openai_embedding_api_key" : "YOUR_KEY",
+    "openai_embedding_api_version" :  "2024-02-15-preview",
+    "openai_embedding_model" : "text-embedding-3-large" ,
+    "openai_gpt_api_base" : "https://YOUR_SERVICE.openai.azure.com/",
+    "openai_gpt_api_key" : "YOUR_KEY",
+    "openai_gpt_api_version" :  "2024-02-15-preview",
+    "openai_gpt_model" : "gpt-4"
+}
