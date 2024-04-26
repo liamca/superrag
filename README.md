@@ -46,6 +46,12 @@ Each example will include an answer id as well as the text for the potential ans
 ## Architecture
 
 The following diagram outlines the architectural flow.
-![image](https://github.com/liamca/superrag/assets/3432973/18b08c1a-e7c3-430c-9ddd-91f4e7494685)
+![image](https://github.com/liamca/superrag/assets/3432973/105858ee-5495-4875-a00b-c154757067e1)
+
+## Demo
+
+Please see the notebook included to see more details on how to rerank results using Azure OpenAI
+
+
 
 
