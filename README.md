@@ -40,7 +40,12 @@ I am going to supply you with a set of potential answers and your goal is to det
 """ +  question + """
 Please respond in JSON format with a "confidence" score for each example indicating your confidence the text answers the question as well as the "id" of the text.  
 Include a field called "relevent_text" which includes the text that is relevent to being able to answer the question.  
-Each example will include an answer id as well as the text for the potential answer, separated by a colon.  
+Each example will include an answer id as well as the text for the potential answer, separated by a colon.
 ```
+
+## Architecture
+
+The following diagram outlines the architectural flow.
+![image](https://github.com/liamca/superrag/assets/3432973/18b08c1a-e7c3-430c-9ddd-91f4e7494685)
 
 
